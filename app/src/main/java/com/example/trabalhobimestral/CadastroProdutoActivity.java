@@ -19,7 +19,7 @@ public class CadastroProdutoActivity extends AppCompatActivity {
     private EditText edDescricao;
     private EditText edValor;
     private Button btSalvar;
-    private TextView tvListaProdutos;
+    private TextView tvListaProduto;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,7 +32,7 @@ public class CadastroProdutoActivity extends AppCompatActivity {
 
         btSalvar = findViewById(R.id.btSalvar);
 
-        tvListaProdutos = findViewById(R.id.tvListaProdutos);
+        tvListaProduto = findViewById(R.id.tvListaProduto);
 
         btSalvar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -52,7 +52,7 @@ public class CadastroProdutoActivity extends AppCompatActivity {
                     "Descrição : " + prod.getDescricao() + "\n" +
                     "Valor : " + prod.getValor() + "\n";
         }
-        tvListaProdutos.setText(texto);
+        tvListaProduto.setText(texto);
     }
 
 

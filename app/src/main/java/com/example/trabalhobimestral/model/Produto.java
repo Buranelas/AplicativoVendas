@@ -37,4 +37,11 @@ public class Produto {
     public void setValor(double valor) {
         this.valor = valor;
     }
+
+    @Override
+    public String toString(){
+        return "\n Codigo: " + codigo + "\n" +
+                "Produto: " + descricao + "\n" +
+                "Valor Produto: " + valor + "\n";
+    }
 }
